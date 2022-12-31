@@ -253,7 +253,7 @@ body {
     flex: 0 0 calc(33.3% - 16px);
     width: calc(33.3% - 16px);
 }
-}
+
 
 
 
@@ -279,9 +279,9 @@ body {
         
 }
 
-}
+
 .hero__img{
     width: 100%;
 }
 
-
+}
