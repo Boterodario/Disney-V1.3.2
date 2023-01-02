@@ -240,8 +240,7 @@ body {
         align-items: center;
         display: flex;
         position: absolute;
-        top: 135%;
-        
+        top: 135%; 
     }
 
     .hero__bigtittle {
@@ -253,7 +252,6 @@ body {
         width: 100%;
     }
     
-
     .devices__all {
     flex-wrap: nowrap;
     gap: 24px;
