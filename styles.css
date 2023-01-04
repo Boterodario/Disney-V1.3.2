@@ -17,6 +17,101 @@ body {
     margin: 0 auto;
     border: 1px solid red;
 }
+.text__mediumtwo{
+    line-height: 29px;
+    letter-spacing: 0.8px;
+    color: silver;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+    margin-bottom: 18px;
+    margin-top: 3px;
+    padding: 2px 18px;
+
+}
+
+.grid__img--img--combo{
+    width: 80%;
+    margin-top: 46px;
+}
+.grid__item--background{
+    background-image: url(img/maspopular.png);
+    list-style: none;
+    background-size: contain;
+    background-repeat: no-repeat; 
+}
+
+
+
+
+
+
+
+
+
+
+.grid__item{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.grid__img{
+    width: 81%;
+    position: relative;
+    left: 19px;
+}
+.grid__textfine{
+    text-align: center;
+    margin: 20px 0px 0px;
+
+}
+.grid__cash{
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: normal;
+    line-height: 32px;
+}
+.text__medium{
+    line-height: 28px;
+    letter-spacing: 0.4px;
+    color: silver;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+    margin-bottom: 18px;
+    margin-top: 3px;
+    padding: 2px 18px;
+}
+.medium__primary{
+    text-decoration: none;
+    width: 73%;
+    height: 44px;
+    color: white;
+    background-color: #0065e9;
+    align-items: center;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    letter-spacing: 0.1rem;
+    font-size: 14px;
+    padding: 0px 10px 0px 10px;
+    margin: 2px 0px 65px;
+}
+.griditem__footer{
+    font-size: 11px;
+    line-height: 21px;
+    margin: 0 0 24px;
+    text-align: center;
+    color: silver;
+    letter-spacing: -0.2px;
+
+}
 
 .container {
     align-items: center;
