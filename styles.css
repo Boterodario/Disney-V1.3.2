@@ -17,6 +17,21 @@ body {
     margin: 0 auto;
     border: 1px solid red;
 }
+
+.grid__plans{
+    text-align: center;
+    margin: 45px;
+}
+
+.grid__disney{
+    width: 80%;
+    margin: 0px 0px 20px;
+}
+
+
+
+
+
 .text__mediumtwo{
     line-height: 29px;
     letter-spacing: 0.8px;
