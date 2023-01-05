@@ -18,21 +18,105 @@ body {
     border: 1px solid red;
 }
 
-.grid__plans{
+.flex__control {
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+.flex__controlmd {
+    padding-top: 50vw;
+    text-align: center;
+    z-index: 1;
+}
+
+.flex__img {
+    width: 64%;
+}
+
+.flex__imgsecundary {
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+.flex__tittle {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: normal;
+    line-height: 32px;
+
+}
+
+.flex__item {
+    list-style: none;
+    flex: 0 0 100%;
+}
+
+.flex__list {
+    grid-gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 0;
+}
+
+.flex_imgthree {
+    width: 100%;
+}
+
+.flex__subscriber {
+    text-decoration: none;
+    width: 100%;
+    height: 44px;
+    color: white;
+    background-color: #0065e9;
+    align-items: center;
+    border-radius: 4px;
+    display: inline-flex;
+    justify-content: center;
+    font-size: 14px;
+    margin: 0px 0px 20px;
+
+}
+
+.flex__span {
+    font-size: 14px;
+    line-height: 44px;
+
+}
+
+.flex__colorletter {
+    color: white;
+    text-decoration-line: inherit;
+}
+
+.background__md {
+    background-image: url(img/background.jpeg);
+    background-repeat: no-repeat;
+    bottom: 0;
+    display: none;
+    left: 0px;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+    background-size: 100%;
+    display: block;
+}
+
+.grid__plans {
     text-align: center;
     margin: 45px;
 }
 
-.grid__disney{
+.grid__disney {
     width: 80%;
     margin: 0px 0px 20px;
 }
 
-
-
-
-
-.text__mediumtwo{
+.text__mediumtwo {
     line-height: 29px;
     letter-spacing: 0.8px;
     color: silver;
@@ -46,50 +130,45 @@ body {
 
 }
 
-.grid__img--img--combo{
+.grid__img--img--combo {
     width: 80%;
-    margin-top: 46px;
+    margin: 32px 31px 20px;
 }
-.grid__item--background{
+
+.grid__item--background {
     background-image: url(img/maspopular.png);
     list-style: none;
     background-size: contain;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
 }
 
-
-
-
-
-
-
-
-
-
-.grid__item{
+.grid__item {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     list-style: none;
 }
 
-.grid__img{
+.grid__img {
     width: 81%;
     position: relative;
     left: 19px;
 }
-.grid__textfine{
+
+.grid__textfine {
     text-align: center;
-    margin: 20px 0px 0px;
+    margin: 9px 0px 0px;
 
 }
-.grid__cash{
+
+.grid__cash {
     font-size: 21px;
     font-weight: 700;
     letter-spacing: normal;
     line-height: 32px;
 }
-.text__medium{
+
+.text__medium {
     line-height: 28px;
     letter-spacing: 0.4px;
     color: silver;
@@ -101,7 +180,8 @@ body {
     margin-top: 3px;
     padding: 2px 18px;
 }
-.medium__primary{
+
+.medium__primary {
     text-decoration: none;
     width: 73%;
     height: 44px;
@@ -116,9 +196,10 @@ body {
     letter-spacing: 0.1rem;
     font-size: 14px;
     padding: 0px 10px 0px 10px;
-    margin: 2px 0px 65px;
+    margin: 2px 0px 30px;
 }
-.griditem__footer{
+
+.griditem__footer {
     font-size: 11px;
     line-height: 21px;
     margin: 0 0 24px;
@@ -417,58 +498,57 @@ body {
 
 @media (min-width: 1025px) {
 
-.container__title {
-    font-size: 36px;
-    letter-spacing: -0.2px;
-    line-height: 1.3em;
-}
+    .container__title {
+        font-size: 36px;
+        letter-spacing: -0.2px;
+        line-height: 1.3em;
+    }
 
-.container__text {
-    font-size: 1.2rem;
-}
+    .container__text {
+        font-size: 1.2rem;
+    }
 
-.container__paragraph {
-    letter-spacing: 0.8px;
-}
+    .container__paragraph {
+        letter-spacing: 0.8px;
+    }
 
-.text__gallery {
-    font-size: 20px;
-}
+    .text__gallery {
+        font-size: 20px;
+    }
 
-.tittle__gallery {
-    font-size: 36px;
-}
+    .tittle__gallery {
+        font-size: 36px;
+    }
 
-.hero__shorttext {
-    font-size: 15px;
-}
+    .hero__shorttext {
+        font-size: 15px;
+    }
 
-.devices__subtittle {
-    font-size: 1.5rem;
-}
+    .devices__subtittle {
+        font-size: 1.5rem;
+    }
 
-.hero__bigtittle {
-    font-size: 22px;
-}
+    .hero__bigtittle {
+        font-size: 22px;
+    }
 
-.devices__text {
-    font-size: 36px;
-}
+    .devices__text {
+        font-size: 36px;
+    }
 }
 
 @media (min-width: 1440px) {
     .container__paragraph {
         line-height: 24px;
-    letter-spacing: 0.8px;
-    font-size: 1.1rem;
+        letter-spacing: 0.8px;
+        font-size: 1.1rem;
     }
 
     .text__gallery {
         font-size: 19px;
     }
-    .hero__text{
 
-    }
+    .hero__text {}
 
     .hero__shorttext {
         letter-spacing: normal;
