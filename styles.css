@@ -12,11 +12,139 @@ body {
     font-family: Avenir, sans-serif;
 }
 
+
 .wrapper {
     max-width: 80%;
     margin: 0 auto;
     border: 1px solid red;
 }
+.nav__presticky{
+    background-color: transparent;
+    opacity: 1;
+    pointer-events: none;
+    z-index: 3;
+    align-items: center;
+    display: flex;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateZ(0);
+    transition: opacity .5s ease-out;
+}
+
+.nav__list{
+    font-size: 10px;
+    list-style-type: none;
+    width: 90%;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.nav__list--item{
+    display: inline-block;
+
+}
+.nav__secundary{
+    padding-left: 7px;
+    padding-right: 7px;
+    height: 39px;
+    max-width: none;
+    width: auto;
+    margin: 0px;
+    margin-top: 4px;
+    align-items: center;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    transition: all .2s ease 0s;
+    vertical-align: middle;
+    border: 1px solid silver;
+    color: #f9f9f9;
+    letter-spacing: 0;
+    background-color: rgba(0,0,0,.8);
+    text-decoration: none;
+}
+
+
+.post__sticky{
+    background-color: transparent;
+    opacity: 1;
+    pointer-events: none;
+    z-index: 3;
+    align-items: center;
+    display: flex;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateZ(0);
+    transition: opacity .5s ease-out;
+}
+
+.post__image{
+    display: inline-block;
+    height: auto;
+    margin-right: auto;
+    max-height: 70px;
+    padding: 0 14px;
+    transition: all .2s ease 0s;
+    width: 80px;
+}
+.post_list{
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    text-indent: 0;
+    width: 100%;
+}
+.post__list--item{
+    margin-right: auto;
+    margin-top: 8px;
+    display: inline-block;
+}
+.post__smallimage{
+    display: inline-block;
+    height: auto;
+    margin-right: auto;
+    max-height: 70px;
+    padding: 0 14px;
+    transition: all .2s ease 0s;
+    width: 80px;
+}
+.post__minimage{
+    display: block;
+    height: auto;
+    width: 100%;
+}
+.small__primary{
+    margin: 5px;
+    background: #0063e5;
+    border: none;
+    color: #f9f9f9;
+    height: 36px;
+    max-width: none;
+    width: 106px;
+    align-items: center;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    transition: all .2s ease 0s;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+
 
 .flex__control {
     align-items: center;
@@ -307,8 +435,6 @@ body {
 .hero__text {
     line-height: 25px;
     text-align: center;
-
-
 }
 
 .hero__bigtittle {
@@ -379,7 +505,73 @@ body {
     flex: 0 0 45%;
 
 }
+.accordion{
+    text-align: center;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 5.6vw;
+    position: relative;
+}
 
+.accordion__tittle{
+
+    font-size: 21px;
+    line-height: 34px;
+    margin-bottom: 16px;
+}
+.accordion__container{
+    background-color: #13151d;
+    box-sizing: border-box;
+    margin-top: 16px;
+    text-align: left;
+    width: 100%;
+}
+.accordion__btn {
+    background: 0 0;
+        border: none;
+        cursor: pointer;
+        margin: 0;
+        padding: 24px;
+        text-align: inherit;
+        width: 100%;
+        color: white;
+    }
+.accordion-container .button__accordion--btn{
+    background: 0 0;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 24px;
+    text-align: inherit;
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0;
+    padding-right: 26px;
+    position: relative;
+    width: 100%;
+}
+
+
+
+.accordion__child{
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 24px;
+    transition: max-height,.25s ease-in-out;
+}
+.accordion-container .accordion-btn :after {
+    color: #f9f9f9;
+    content: "+";
+    font-size: 40px;
+    line-height: .8;
+    position: absolute;
+    right: 0;
+    top: calc(50% - 16px);
+}
 
 @media (min-width: 769px) {
     .container {
