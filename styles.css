@@ -12,25 +12,56 @@ body {
     font-family: Avenir, sans-serif;
 }
 
-
 .wrapper {
     max-width: 80%;
     margin: 0 auto;
     border: 1px solid red;
 }
-.nav__presticky{
-    background-color: transparent;
-    opacity: 1;
-    pointer-events: none;
-    z-index: 3;
+
+.init{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    
+}
+
+.header.down{
+    background: #fff;
+    padding: 15px 20px;
+}
+
+.nav{
     align-items: center;
     display: flex;
+    height: 70px;
     left: 0;
+    opacity: 1;
+    padding: 0 36px;
+    pointer-events: none;
     position: fixed;
     right: 0;
     top: 0;
     transform: translateZ(0);
     transition: opacity .5s ease-out;
+    z-index: 4;
+}
+.nav ul{
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    text-indent: 0;
+    width: 100%;
+}
+.nav .pre-sticky{
+    background-color: transparent;
+    opacity: 1;
+    pointer-events: none;
+    z-index: 3;
+}
+.nav.pre-sticky ul{
+    justify-content: flex-end;
 }
 
 .nav__list{
@@ -46,14 +77,11 @@ body {
     display: inline-block;
 
 }
-.nav__secundary{
-    padding-left: 7px;
-    padding-right: 7px;
-    height: 39px;
+.nav__secondary{
+    height: 40px;
     max-width: none;
     width: auto;
-    margin: 0px;
-    margin-top: 4px;
+    margin: 5px;
     align-items: center;
     border-radius: 4px;
     box-sizing: border-box;
@@ -65,9 +93,7 @@ body {
     vertical-align: middle;
     border: 1px solid silver;
     color: #f9f9f9;
-    letter-spacing: 0;
-    background-color: rgba(0,0,0,.8);
-    text-decoration: none;
+    background-color: #040714;
 }
 
 
@@ -116,7 +142,7 @@ body {
     max-height: 70px;
     padding: 0 14px;
     transition: all .2s ease 0s;
-    width: 80px;
+    width: 100%;
 }
 .post__minimage{
     display: block;
@@ -563,7 +589,7 @@ body {
     padding: 0 24px;
     transition: max-height,.25s ease-in-out;
 }
-.accordion-container .accordion-btn :after {
+.accordion__container .accordion__btn :after {
     color: #f9f9f9;
     content: "+";
     font-size: 40px;
@@ -571,6 +597,14 @@ body {
     position: absolute;
     right: 0;
     top: calc(50% - 16px);
+}
+.accordion-container button.accordion-btn * {
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0;
+    padding-right: 26px;
+    position: relative;
+    width: 100%;
 }
 
 @media (min-width: 769px) {
