@@ -1143,14 +1143,9 @@ body {
             flex-wrap: wrap;
             justify-content: center;
         }
-
-
-
-
-
-
-
-
+        .text__fine a{
+            font-size: 0.6em;
+        }
     }
 
 
