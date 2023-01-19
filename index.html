@@ -97,17 +97,19 @@
 
 <body class="typeramp-avenir ">
   <div class="wrapper">
-    <header class="header__content">
-      <nav id="nav">
-        <a href="#" id="nav--primary">
-          <source media="(min-width:1025px )"
-            srcset="https://cnbl-cdn.bamgrid.com/assets/7ecc8bcb60ad77193058d63e321bd21cbac2fc67281dbd9927676ea4a4c83594/original">
-          <img src="img/miniD.svg" alt="Logo disney">
-        </a>
-        <a href="#" id="nav--secondary">SUSCRÍBETE AHORA</a>
-        <a href="#" id="nav--success">INICIAR SESION</a>
-      </nav>
-    </header>
+    <div id="nav__container">
+      <div id="navbar">
+          <img src="img/miniD.svg" alt="Logo disney" id="nav__img">
+      <ul id="nav__content">
+        <li id="nav__click--item">
+          <a href="#">SUSCRÍBETE AHORA</a>
+        </li>
+        <li id="nav__click">
+          <a href="#">INICIAR SESION</a>
+        </li>
+      </ul>
+    </div>
+    </div>
     <section class="flex__control">
       <div class="flex__controlmd">
         <source media="(min-width: 1025px )"
@@ -309,7 +311,10 @@
     <br>
     <section class="collapsible__content">
       <h2 class="collapsible__tittle">Preguntas frecuentes</h2>
-      <button class="collapsible">¿Qué incluye Disney+?</button>
+      <button class="collapsible">
+        <span class="span">¿Qué incluye Disney+? </span>
+      </button>
+  
       <div class="content">
         <p class="content__text"> Beneficios de la suscripción a Disney+:</p>
         <p class="content__text">• Experiencia prémium sin cortes comerciales.</p>
@@ -322,6 +327,7 @@
         <p class="content__text">• IMAX Enhanced: disponible en algunos títulos de Marvel y en todos los dispositivos
           compatibles con Disney+.</p>
       </div>
+    
 
       <button class="collapsible">¿Ya tienes Disney+ o Star+ y quieres Combo+?</button>
       <div class="content">
@@ -404,18 +410,7 @@
             D.C. y número de NIT es 800.236.937-1
           </P>
         </div>
-
-
-
-
-
-
-
-
       </footer>
-
-
-
     </section>
   </div>
 </body>

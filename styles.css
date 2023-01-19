@@ -23,63 +23,78 @@ body {
     border: 1px solid red;
 }
 
-.header__content {
-    display: flex;
-    justify-content: flex-end;
-
+#navbar :hover{
+    background-color: white;
 }
 
 
-#nav {
+
+#nav__container{
+    z-index: 5;
+   width: 80%;
+   position: fixed;
+}
+#navbar{
+    width: 100%;
+    padding: 4px 0;
     display: flex;
-    border: 1px solid #c0c0c0;
-    font-size: 15px;
-    justify-content: flex-end;
-    padding: 5px;
-    margin: 5px;
     align-items: center;
-    text-align: center;
-    font-size: 11px;
-    position: fixed;
-    z-index: 2;
-    background-color: #13151d;
+    justify-content: flex-end;
+    transition: top 0.5;
+}
+#nav__content{
+    gap: 7px;
     border-radius: 3px;
-
-
+    line-height: 1;
+    display: flex;
+    height: 40px;
+    max-width: none;
+    width: auto;
+    
 }
-
-
-#nav--primary {
-    width: 39%;
+#nav__img{
     display: none;
-    margin: 5px 0px 5px 5px;
+    width: 64px;
+    cursor: pointer;
+    margin: 0px 5px 0px 5px;
 }
-
-#nav--secondary {
+#navbar .nav__content .nav_click{
+    width: 50%;
+}
+#nav__click a{
+    
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+}
+#nav__click--item a{
     border-radius: 5px;
-    width: 69%;
-    display: flex;
-    background-color: #6421ff;
-    border-color: silver;
-    display: none;
-    text-decoration: none;
+    font-size: 12px;
     color: white;
-    height: 39px 40px 46px 46px;
-    height: 36px;
-    margin: 6px;
-    align-items: center;
-
-
+    text-decoration: none;
 }
-
-#nav--success {
-    display: flex;
-    background-color: transparent;
+#nav__click{
+    padding: 5px;
+    border-width: 1px;
+    border-style: solid;
     border-color: #c0c0c0;
-    text-decoration: none;
-    border-bottom-color: c0c0c0;
-    color: white;
+    border-radius: 4px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    background:  rgba(0,0,0,.8);
+    text-align: center;
 }
+#nav__click--item{
+    border-radius: 3px;
+    text-align: center;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    background: blue;
+    display: none;
+}
+/*  */
 
 
 .flex__control {
@@ -91,7 +106,7 @@ body {
 .flex__controlmd {
     padding-top: 50vw;
     text-align: center;
-    z-index: 1;
+    z-index: 4;
 }
 
 .background__md {
@@ -102,7 +117,7 @@ body {
     pointer-events: none;
     position: absolute;
     top: 0;
-    z-index: 0;
+    z-index: 2;
     background-size: 100%;
     display: block;
     width: 100%;
@@ -417,7 +432,6 @@ body {
     color: #f9f9f9;
     cursor: pointer;
     padding: 14px;
-    width: 98%;
     border: none;
     text-align: left;
     outline: none;
@@ -433,8 +447,10 @@ body {
     background-color: #13151d;
 }
 
-.collapsible:after {
-    content: '\002B';
+.collapsible::after
+ {
+    
+    content: '+';
     color: white;
     font-weight: bold;
     font-weight: 100;
@@ -444,6 +460,15 @@ body {
     line-height: 0.4;
     left: 81%;
 }
+.active:after {
+    content: "\2212";
+}
+
+.collapsible__content{
+    display: flex;
+    flex-direction: column;
+    
+}
 
 .collapsible__tittle {
     margin: 0 0 16px;
@@ -451,9 +476,8 @@ body {
     font-size: 24px;
 }
 
-.active:after {
-    content: "\2212";
-}
+
+
 
 .content {
     color: #c0c0c0;
@@ -544,7 +568,7 @@ body {
 }
 
 
-@media (min-width: 375px) and (max-width: 425px) {}
+@media (min-width: 375px) and (max-width: 425px) {
 
 .flex__img {
     width: 50%;
@@ -577,12 +601,7 @@ body {
     font-size: 14px;
 }
 
-.collapsible:after {
-    right: 46px;
-    font-size: 30px;
-    line-height: 1.1;
 }
-
 
 @media (min-width: 768px) {
     #nav {
@@ -778,7 +797,6 @@ body {
     }
 
     .container__img {
-        /* height: 100%; */
         display: flex;
         width: 100%;
         align-items: stretch;
@@ -817,7 +835,7 @@ body {
     }
 
     .hero__text {
-        bottom: 29%;
+        bottom: 36%;
         left: 50%;
         display: flex;
         text-align: inherit;
@@ -829,6 +847,9 @@ body {
     .devices__all {
         display: flex;
         flex-wrap: nowrap;
+    }
+    .footer__list--item a{
+        font-size: 11px;
     }
 
     .devices__text {
@@ -973,7 +994,6 @@ body {
     }
 
     .container__img {
-        /* height: 100%; */
         display: flex;
         width: 100%;
         align-items: stretch;
