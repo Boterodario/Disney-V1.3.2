@@ -3,13 +3,14 @@ let = ubicacionPrincipal =window.pageYOffset;
 window.onscroll = function() {
   let = Desplazamiento__Actual = window.pageYOffset;
   if(ubicacionPrincipal >= Desplazamiento__Actual){
-    document.getElementById("nav__container").style.top = "0px";
+    document.toggle("nav__click--item").style.top = "0";
   }
   else{
-    document.getElementById("nav__container").style.top = "-500px";
+    document.toggle("nav__click--item").style.top = "-600px";
   }
   ubicacionPrincipal = Desplazamiento__Actual
 }
+
 
 
 

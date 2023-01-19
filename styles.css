@@ -23,9 +23,6 @@ body {
     border: 1px solid red;
 }
 
-#navbar :hover{
-    background-color: white;
-}
 
 
 
@@ -94,7 +91,7 @@ body {
     background: blue;
     display: none;
 }
-/*  */
+
 
 
 .flex__control {
@@ -134,7 +131,7 @@ body {
 }
 
 .flex__tittle {
-    font-size: 21px;
+    font-size: 1.2em;
     font-weight: 700;
     letter-spacing: normal;
     line-height: 32px;
@@ -257,7 +254,7 @@ body {
 
 .container {
     align-items: center;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     font-size: 1rem;
     margin: 0 0 16px;
 
@@ -340,7 +337,7 @@ body {
 }
 
 .hero {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     font-size: 1rem;
 }
 
@@ -397,7 +394,7 @@ body {
 .devices {
     align-items: center;
     font-size: 1rem;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 .devices__all {
@@ -588,6 +585,9 @@ body {
     width: 100%;
     margin: 0px 0px 20px
 }
+.grid__text{
+    width: 80%;
+}
 
 .text__medium {
     width: 100%;
@@ -601,6 +601,14 @@ body {
     font-size: 14px;
 }
 
+.flex__subscriber{
+    width: 80%;
+}
+.container__paragraph{
+    padding: 0px 13px 0px 13px;
+    font-size: 14px;
+}
+
 }
 
 @media (min-width: 768px) {
@@ -608,7 +616,6 @@ body {
         font-size: 14px;
         display: flex;
         width: 16%;
-        /* place-content: space-around; */
         align-items: center;
         flex-direction: column;
 
@@ -661,6 +668,10 @@ body {
         position: relative;
         left: 43%;
         margin-top: 20%;
+    }
+    .griditem__footer{
+        font-size: 9px;
+        letter-spacing: 0.9px;
     }
 
     .text__medium {
