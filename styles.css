@@ -30,7 +30,7 @@ body {
     justify-content: flex-end;
     background-color: transparent;
     opacity: 1;
-    pointer-events: none;
+    pointer-events: auto;
     z-index: 3;
     position: fixed;
     right: 0;
@@ -72,8 +72,10 @@ body {
     display: flex;
     text-decoration: none;
     left: 27px;
+    display: none;
 }
 #nav__content{
+  
     display: flex;
     align-items: center;
     width: 100%;
@@ -100,19 +102,18 @@ body {
 
 }
 #nav__item1{
+    width: 80%;
     justify-content: center;
-    display: none;
+    /* display: none; */
 }
 #nav__item2{
+    width: 100%;
     padding: 5px;
     border-radius: 3px;
     background: blue;
     line-height: 1em;
     display: flex;
     text-align: center;
-   
-    align-items: center;
-    display: none;
 }
 #nav__item3{
     border-radius: 5px;
@@ -123,12 +124,11 @@ display: flex;
 text-align: center;
 align-items: center;
 padding: 3px;
-display: none;
-width: 100%;
+/* display: none; */
+width: 80%;
 
 }
 .nav__link1{
-    padding: 8px;
     font-size: 13px;
     text-align: center;
     text-decoration: none;
@@ -390,7 +390,6 @@ width: 100%;
 }
 
 .hero {
-    /* border: 1px solid green; */
     font-size: 1rem;
 }
 
@@ -447,7 +446,6 @@ width: 100%;
 .devices {
     align-items: center;
     font-size: 1rem;
-    /* border: 1px solid green; */
 }
 
 .devices__all {
@@ -619,6 +617,14 @@ width: 100%;
 
 
 @media (min-width: 375px) and (max-width: 425px) {
+    #nav{
+        width: 75%;
+        margin: 8px;
+    }
+    .nav__list--item{
+        font-size: 13px;
+        padding: 5px;
+    }
 
 .flex__img {
     width: 50%;
@@ -665,19 +671,30 @@ width: 100%;
 }
 
 @media (min-width: 768px) {
-    
+
+    #nav{
+        position: fixed;
+    width: 76%;
+    z-index: 4;
+    left: 11%;
+    }
+    .nav__list--item{
+        font-size: 13px;
+        
+    }
     .background__md{
-    background-image: url(img/fondo768px1024px.jpeg);
+    background-image: url(img/background768px.jpeg);
     background-repeat: no-repeat;
     bottom: 0;
     display: none;
     pointer-events: none;
     position: absolute;
     top: 0;
-    z-index: 2;
+    z-index: 1;
     background-size: 100%;
     display: block;
     width: 100%;
+    
     }
 
     .flex__img {
@@ -692,9 +709,11 @@ width: 100%;
 
     .flex__controlmd {
         width: 72%;
+        padding-top: 45vw;
         display: flex;
         flex-direction: column;
         align-items: center;
+        z-index: 2;
     }
 
     .plan__selector {
@@ -776,6 +795,24 @@ width: 100%;
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+
+    .background__md {
+        background-image: url(img/grande.jpeg);
+    }
+    #nav {
+        position: fixed;
+        width: 75%;
+        z-index: 4;
+        left: 11%;
+    }
+    .nav__list{
+        width: 20%;
+    }
+    .nav__list--item{
+        width: 100%;
+        justify-content: center;
+    }
+
     .flex__list {
         align-items: baseline;
         grid-gap: 16px;
@@ -932,6 +969,21 @@ width: 100%;
 }
 
 @media (min-width: 1025px) {
+
+    #nav{
+        width: 76%;
+        margin-top: 10px;
+        left: 10%;
+        
+    }
+    .nav__list{
+        width: 20%;
+    }
+    .nav__list--item {
+        font-size: 13px;
+        width: 100%;
+        justify-content: center;
+    }
 
     .flex__controlmd {
         display: flex;
@@ -1127,6 +1179,10 @@ width: 100%;
 }
 
     @media (min-width: 1440px) {
+        .nav__list{
+            width: 12%;
+          
+        }
         .flex__controlmd {
             padding: 13% 0px 0px;
         }
@@ -1245,6 +1301,16 @@ width: 100%;
         }
     }
     @media (min-width: 2560px){
+        #nav{
+            width: 76%;
+            left: 13%;
+        }
+        .nav__list{
+            width: 7%;
+        }
+
+
+
         .collapsible{
             line-height: 1px;
             font-size: 20px;

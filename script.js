@@ -1,15 +1,16 @@
 
- let = ubicacionPrincipal =window.pageYOffset;
- window.onscroll = function() {
- let = Desplazamiento__Actual = window.pageYOffset;
- if( ubicacionPrincipal >= Desplazamiento__Actual){
-  document.getElementById("nav").style.display = "0";
- }
- else{
- document.getElementById("nav").style.display= "-100px";
- }
- ubicacionPrincipal = Desplazamiento__Actual
- }
+//  let = ubicacionPrincipal =window.pageYOffset;
+//  window.onscroll = function() {
+//  let = Desplazamiento__Actual = window.pageYOffset;
+//  if( ubicacionPrincipal >= Desplazamiento__Actual){
+// document.getElementById("nav").style.top = "0";
+//  }
+//  else{
+//  document.getElementById("nav").style.top= "-600px";
+
+//  }
+//  ubicacionPrincipal = Desplazamiento__Actual
+//  }
 
 
 
@@ -19,15 +20,26 @@
 
  function changeBackground() {
  // document.getElementById('nav').style.backgroundColor = color;
- document.getElementById("nav").style.justifyContent = "space-around";
+ document.getElementById("nav__menu").style.justifyContent = "space-around";
+ document.getElementById("nav__menu").style.display = "block";
  document.getElementById("nav").style.display = "none";
  document.getElementById("nav__item1").style.display = "block";
  document.getElementById("nav__item2").style.display = "block";
  document.getElementById("nav__item3").style.display = "block";
+ let = ubicacionPrincipal =window.pageYOffset;
+window.onscroll = function() {
+let = Desplazamiento__Actual = window.pageYOffset;
+if( ubicacionPrincipal >= Desplazamiento__Actual){
+ocument.getElementById("nav").style.top = "0";
+}
+else{
+document.getElementById("nav").style.top= "-600px";
+}
+ubicacionPrincipal = Desplazamiento__Actual
+}
+
 }
  window.addEventListener("scroll",function() { changeBackground() });
-
-
 
 
 
