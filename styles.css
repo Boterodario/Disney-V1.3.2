@@ -20,7 +20,7 @@ body {
 .wrapper {
     max-width: 80%;
     margin: 0 auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 #nav {
@@ -670,6 +670,7 @@ body {
         width: 100%;
         font-size: 14px;
     }
+
     .collapsible::after {
         left: 82%;
     }
@@ -684,6 +685,7 @@ body {
     }
 
 }
+
 @media (min-width: 768px) {
     #nav {
         position: fixed;
@@ -691,6 +693,7 @@ body {
         z-index: 4;
         left: 11%;
     }
+
     #nav__menu {
         margin: 5px;
         width: 80%;
@@ -698,7 +701,7 @@ body {
         position: fixed;
         display: flex;
         text-decoration: none;
-        left: 76px; 
+        left: 76px;
         display: none;
     }
 
@@ -706,32 +709,36 @@ body {
         font-size: 13px;
     }
 
-    #nav__content{
+    #nav__content {
         width: 100%;
         gap: 15px;
         justify-content: flex-start;
 
     }
+
     #nav__item1 {
         width: 40%;
     }
-    .nav__link{
+
+    .nav__link {
         justify-content: flex-start;
     }
+
     .nav__img {
         left: 10;
         width: 30%;
     }
 
-    #nav__item2{
+    #nav__item2 {
         width: 30%;
         padding: 12px;
     }
 
-    #nav__item3{
+    #nav__item3 {
         width: 23%;
         padding: 12px;
     }
+
     .background__md {
         background-image: url(img/background768px.jpeg);
         background-repeat: no-repeat;
@@ -868,13 +875,15 @@ body {
         justify-content: center;
     }
 
-    #nav__content{
+    #nav__content {
         position: relative;
         left: 5%;
     }
+
     #nav__item2 {
         width: 21%;
     }
+
     #nav__item3 {
         width: 20%;
         padding: 10px;
@@ -933,6 +942,7 @@ body {
         flex-direction: column;
         justify-content: space-between;
     }
+
     .grid__text {
         width: 100%;
         color: silver;
@@ -940,6 +950,7 @@ body {
         margin: 0px 0px 15px;
         padding: 0px 14px 0px 14px;
     }
+
     .grid__suscriber {
         border-radius: 5px;
         width: 80%;
@@ -1045,7 +1056,13 @@ body {
         width: 76%;
         margin-top: 10px;
         left: 10%;
-
+    }
+    #nav__content {
+        width: 100%;
+        gap: 15px;
+        justify-content: flex-end;
+        position: relative;
+        left: 45px;
     }
 
     .nav__list {
@@ -1110,12 +1127,15 @@ body {
     }
 
     .grid__flex {
-        width: 79%;
+        width: 100%;
         display: flex;
         justify-content: center;
         gap: 21px;
-        align-items: flex-end;
         flex-direction: row;
+    }
+    .grid__text {
+        width: 66%;
+        font-size: 15px;
     }
 
 
@@ -1124,7 +1144,7 @@ body {
         display: flex;
         text-align: center;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-end;
     }
 
     .grid__disney {
@@ -1156,12 +1176,13 @@ body {
 
     .grid__suscriber {
         border-radius: 5px;
-        width: 100%;
+        width: 74%;
         margin: 10;
         margin: 0px;
         font-size: inherit;
         line-height: 1em;
-        height: 0%;
+        height: 6%;
+        padding: 10%;
     }
 
     .griditem__footer {
@@ -1201,13 +1222,13 @@ body {
 
     .container__paragraph {
         text-align: inherit;
-        font-size: 17px
+        font-size: 1.2em
     }
 
     .container__title {
+        line-height: 1em;
         text-align: inherit;
-        ;
-        font-size: 25px;
+        font-size: 2.5em;
         font-weight: 700;
     }
 
@@ -1215,6 +1236,13 @@ body {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         justify-items: center;
+    }
+    .tittle__gallery{
+        font-size: 2.2em;
+        line-height: 2em;
+    }
+    .text__gallery{
+        font-size: 1.2em;
     }
 
     .gallery__item {
@@ -1239,6 +1267,15 @@ body {
         width: calc(50% - 5vw);
         position: absolute;
     }
+    .hero__shorttext {
+        margin: 0px 0px 18%;
+        color: silver;
+        line-height: 21px;
+        font-size: 16px;
+    }
+    .hero__bigtittle{
+        font-size: 25px;
+    }
 
     .devices__all {
         display: flex;
@@ -1248,9 +1285,25 @@ body {
     .devices__text {
         font-size: 24px;
     }
-    .collapsible:after {
-        left: 86%;
+     
+
+     .collapsible{
+        width: 83%;
+        position: relative;
+        left: 8%;
+
+
+     }
+    .content{
+        width: 80%;
+        position: relative;
+        left: 11%;
     }
+    .collapsible:after {
+        left: 95%;
+    }
+
+
 
 }
 
@@ -1265,13 +1318,16 @@ body {
     #nav__item1 {
         width: 63%;
     }
+
     #nav__item2 {
         width: 16%;
     }
+
     #nav__item3 {
         width: 16%;
     }
-    .nav__link{
+
+    .nav__link {
         width: 50%;
     }
 
@@ -1313,7 +1369,8 @@ body {
     .grid__content {
         width: 80%;
     }
-    .grid__container{
+
+    .grid__container {
         margin: 0px 0px 80px;
     }
 
@@ -1373,6 +1430,7 @@ body {
         display: flex;
         align-items: center;
     }
+
     .collapsible:after {
         left: 87%;
     }
@@ -1383,14 +1441,6 @@ body {
         font-size: 2.5em;
     }
 
-    /* .text__info { */
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* text-align: center; */
-        /* margin-top: 18%; */
-        /* align-items: center; */
-    /* } */
-
     .collapsible__content {
         display: flex;
         flex-wrap: wrap;
@@ -1400,6 +1450,7 @@ body {
     .text__fine a {
         font-size: 0.6em;
     }
+
     .text__info {
         position: relative;
         left: 15%;
@@ -1411,9 +1462,11 @@ body {
         width: 76%;
         left: 13%;
     }
+
     .nav__list {
         width: 7%;
     }
+
     .collapsible {
         line-height: 1px;
         font-size: 20px;
@@ -1432,6 +1485,7 @@ body {
         left: 24%;
         position: relative;
     }
+
     .text__info {
         position: relative;
         left: 25%;
