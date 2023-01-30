@@ -87,6 +87,7 @@ body {
     gap: 4px;
     margin: -4px;
     z-index: 4;
+    /* display: none; */
 
 }
 
@@ -853,12 +854,31 @@ body {
 
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) {
+    .grid__flex {
+        width: 100%;
+        display: flex;
+        gap: 21px;
+        flex-direction: row;
+        align-items: center;
+    }
+    .grid__content{
+        margin: 0;
+    }
+    .grid__flex{
+        align-items: flex-end;
+        gap: 25px;
+    }
+    .grid__suscriber{
+        padding: 3%;
+
+}
+
+@media(min-width: 1024px) {
 
     .background__md {
         background-image: url(img/grande.jpeg);
     }
-
     #nav {
         position: fixed;
         width: 75%;
@@ -1377,6 +1397,10 @@ body {
     .griditem__footer {
         margin: 0px 0px 20px;
     }
+    .grid__suscriber {
+         width: 100%; 
+        padding: 6%;
+    }
 
     .container__paragraph {
         font-size: 20px;
@@ -1432,7 +1456,7 @@ body {
     }
 
     .collapsible:after {
-        left: 87%;
+        left: 96%;
     }
 
     .collapsible__tittle {
@@ -1453,9 +1477,27 @@ body {
 
     .text__info {
         position: relative;
-        left: 15%;
+        left: 7%;
     }
 }
+
+
+@media (min-width: 1920px) {
+    
+    .text__info{
+        left: 19%;
+    }
+    .grid__flex{
+        width: 100%;
+    }
+    .grid__suscriber{
+        padding: 4%;
+    }
+    .container__paragraph {
+        font-size: 17px;
+    
+}
+
 
 @media (min-width: 2560px) {
     #nav {
@@ -1477,7 +1519,7 @@ body {
     .collapsible:after {
         width: 2%;
         display: flex;
-        left: 88%;
+        left: 96%;
     }
 
     .text__info {
@@ -1489,5 +1531,8 @@ body {
     .text__info {
         position: relative;
         left: 25%;
+    }
+    .content__text{
+        width: 80%;
     }
 }

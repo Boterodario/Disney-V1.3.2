@@ -1,45 +1,49 @@
 
-//  let = ubicacionPrincipal =window.pageYOffset;
-//  window.onscroll = function() {
-//  let = Desplazamiento__Actual = window.pageYOffset;
-//  if( ubicacionPrincipal >= Desplazamiento__Actual){
-// document.getElementById("nav").style.top = "0";
-//  }
-//  else{
-//  document.getElementById("nav").style.top= "-600px";
-
-//  }
-//  ubicacionPrincipal = Desplazamiento__Actual
-//  }
-
-
-
-
-
-
-
- function changeBackground() {
- // document.getElementById('nav').style.backgroundColor = color;
- document.getElementById("nav__menu").style.justifyContent = "space-around";
- document.getElementById("nav__menu").style.display = "block";
- document.getElementById("nav").style.display = "none";
- document.getElementById("nav__item1").style.display = "block";
- document.getElementById("nav__item2").style.display = "block";
- document.getElementById("nav__item3").style.display = "block";
- let = ubicacionPrincipal =window.pageYOffset;
+var  prevScrollpos =window.pageYOffset;
 window.onscroll = function() {
-let = Desplazamiento__Actual = window.pageYOffset;
-if( ubicacionPrincipal >= Desplazamiento__Actual){
-ocument.getElementById("nav").style.top = "0";
+var   currentScrollPos  = window.pageYOffset;
+if( prevScrollpos > currentScrollPos){
+  document.getElementById("nav").style.top = "0";
+  document.getElementById("nav__menu").style.display = "none";
 }
 else{
-document.getElementById("nav").style.top= "-600px";
+  document.getElementById("nav").style.top = "-600px";
+  document.getElementById("nav__menu").style.display = "block";
+  
 }
-ubicacionPrincipal = Desplazamiento__Actual
+prevScrollpos = currentScrollPos
 }
 
-}
- window.addEventListener("scroll",function() { changeBackground() });
+// var fax = window.pageYOffset;
+  // window.onscroll= function (){
+    // var superfax = window.pageYOffset;
+    // if ( fax > superfax){
+      // document.getElementById("nav__menu").style.display = "none"
+    // }else{
+      // document.getElementById("nav__menu").style.display = "block"
+    // }
+    // fax = superfax
+// }
+
+//  function changeBackground() {
+  // var scrollTop = window.scrollY
+  // if(scrollTop < 500){
+  // document.getElementById("nav").style.display = "none";
+  // document.getElementById("nav__menu").style.display = "block";
+  // }
+  // window.addEventListener("scroll",function() { changeBackground() });
+//  }
+
+ // document.getElementById('nav').style.backgroundColor = color;
+//  document.getElementById("nav__menu").style.justifyContent = "space-around";
+//  document.getElementById("nav__menu").style.display = "block";
+//  document.getElementById("nav").style.display = "none";
+
+
+
+ 
+// }
+//  window.addEventListener("scroll",function() { changeBackground() });
 
 
 
