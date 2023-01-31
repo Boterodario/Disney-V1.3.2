@@ -864,16 +864,19 @@ body {
         flex-direction: row;
         align-items: center;
     }
-    .grid__content{
+
+    .grid__content {
         margin: 0;
     }
-    .grid__flex{
+
+    .grid__flex {
         align-items: flex-end;
         gap: 25px;
     }
-    .grid__suscriber{
+
+    .grid__suscriber {
         padding: 3%;
-}
+    }
 
 }
 
@@ -882,6 +885,7 @@ body {
     .background__md {
         background-image: url(img/grande.jpeg);
     }
+
     #nav {
         position: fixed;
         width: 75%;
@@ -1080,6 +1084,7 @@ body {
         margin-top: 10px;
         left: 10%;
     }
+
     #nav__content {
         width: 100%;
         gap: 15px;
@@ -1087,11 +1092,13 @@ body {
         position: relative;
         left: 45px;
     }
+
     #nav__item2 {
         width: 21%;
         padding: 12px;
     }
-    .nav__click{
+
+    .nav__click {
         justify-content: center;
     }
 
@@ -1163,6 +1170,7 @@ body {
         gap: 21px;
         flex-direction: row;
     }
+
     .grid__text {
         width: 66%;
         font-size: 15px;
@@ -1267,11 +1275,13 @@ body {
         grid-template-columns: repeat(3, 1fr);
         justify-items: center;
     }
-    .tittle__gallery{
+
+    .tittle__gallery {
         font-size: 2.2em;
         line-height: 2em;
     }
-    .text__gallery{
+
+    .text__gallery {
         font-size: 1.2em;
     }
 
@@ -1297,13 +1307,15 @@ body {
         width: calc(50% - 5vw);
         position: absolute;
     }
+
     .hero__shorttext {
         margin: 0px 0px 18%;
         color: silver;
         line-height: 21px;
         font-size: 16px;
     }
-    .hero__bigtittle{
+
+    .hero__bigtittle {
         font-size: 25px;
     }
 
@@ -1315,20 +1327,22 @@ body {
     .devices__text {
         font-size: 24px;
     }
-     
 
-     .collapsible{
+
+    .collapsible {
         width: 83%;
         position: relative;
         left: 8%;
 
 
-     }
-    .content{
+    }
+
+    .content {
         width: 80%;
         position: relative;
         left: 11%;
     }
+
     .collapsible:after {
         left: 95%;
     }
@@ -1407,8 +1421,9 @@ body {
     .griditem__footer {
         margin-top: 8%;
     }
+
     .grid__suscriber {
-         width: 100%; 
+        width: 100%;
         padding: 6%;
     }
 
@@ -1493,20 +1508,23 @@ body {
 
 
 @media (min-width: 1920px) {
-    
-    .text__info{
+
+    .text__info {
         left: 19%;
     }
-    .grid__flex{
+
+    .grid__flex {
         width: 100%;
     }
-    .grid__suscriber{
+
+    .grid__suscriber {
         padding: 4%;
     }
+
     .container__paragraph {
         font-size: 17px;
-    
-}
+
+    }
 
 }
 
@@ -1520,10 +1538,11 @@ body {
         width: 7%;
     }
 
-    #nav__item2{
+    #nav__item2 {
         width: 12%;
     }
-    #nav__item3{
+
+    #nav__item3 {
         width: 12%;
         padding: 12px;
     }
@@ -1551,9 +1570,11 @@ body {
         position: relative;
         left: 25%;
     }
-    .content__text{
+
+    .content__text {
         width: 80%;
     }
+
     .grid__flex {
         width: 80%;
     }

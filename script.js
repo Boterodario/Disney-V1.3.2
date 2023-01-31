@@ -1,5 +1,3 @@
-
-
 //MENU CON SCROLL
 
 var prevScrollpos = window.pageYOffset;
@@ -8,15 +6,12 @@ window.onscroll = function () {
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("nav").style.top = "0";
     document.getElementById("nav__menu").style.display = "none";
-  }
-  else {
+  } else {
     document.getElementById("nav").style.top = "-600px";
     document.getElementById("nav__menu").style.display = "block";
-
   }
-  prevScrollpos = currentScrollPos
-}
-
+  prevScrollpos = currentScrollPos;
+};
 
 //MENU DESPLEGABLE
 
@@ -34,4 +29,3 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
-
