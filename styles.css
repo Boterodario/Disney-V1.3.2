@@ -732,12 +732,14 @@ body {
 
     #nav__item2 {
         width: 30%;
-        padding: 12px;
+        padding: 15px;
+        justify-content: center;
     }
 
     #nav__item3 {
         width: 23%;
         padding: 12px;
+        justify-content: center;
     }
 
     .background__md {
@@ -1507,6 +1509,14 @@ body {
 
     .nav__list {
         width: 7%;
+    }
+
+    #nav__item2{
+        width: 12%;
+    }
+    #nav__item3{
+        width: 12%;
+        padding: 12px;
     }
 
     .collapsible {
