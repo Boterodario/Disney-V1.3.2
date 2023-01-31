@@ -168,7 +168,7 @@ body {
 
 .background__md {
     background-image: url(img/fondo320px.jpeg);
-    linear-gradient (to bottom, #050714, #101521);
+    background: linear-gradient(180deg, #050714, #101521);
     background-repeat: no-repeat;
     bottom: 0;
     display: none;
@@ -873,6 +873,7 @@ body {
     }
     .grid__suscriber{
         padding: 3%;
+}
 
 }
 
@@ -1086,6 +1087,13 @@ body {
         position: relative;
         left: 45px;
     }
+    #nav__item2 {
+        width: 21%;
+        padding: 12px;
+    }
+    .nav__click{
+        justify-content: center;
+    }
 
     .nav__list {
         width: 20%;
@@ -1140,7 +1148,7 @@ body {
     }
 
     .flex__subscriber {
-        padding: 29px;
+        padding: 27px;
         font-size: 1.em;
         width: 100%;
         line-height: 1;
@@ -1202,17 +1210,17 @@ body {
         margin: 10;
         margin: 0px;
         font-size: inherit;
-        line-height: 1em;
-        height: 6%;
         padding: 10%;
     }
 
     .griditem__footer {
-        margin: 20px;
+        margin: 7% 0px 20% 0px;
+        padding: 0px;
     }
 
     .text__mediumtwo {
         padding: 0px;
+
     }
 
     .grid__textfine {
@@ -1397,7 +1405,7 @@ body {
     }
 
     .griditem__footer {
-        margin: 0px 0px 20px;
+        margin-top: 8%;
     }
     .grid__suscriber {
          width: 100%; 
@@ -1500,6 +1508,7 @@ body {
     
 }
 
+}
 
 @media (min-width: 2560px) {
     #nav {
@@ -1529,7 +1538,7 @@ body {
     .collapsible:after {
         width: 2%;
         display: flex;
-        left: 96%;
+        left: 97%;
     }
 
     .text__info {
@@ -1543,6 +1552,9 @@ body {
         left: 25%;
     }
     .content__text{
+        width: 80%;
+    }
+    .grid__flex {
         width: 80%;
     }
 }
